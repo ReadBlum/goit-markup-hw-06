@@ -1,7 +1,7 @@
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-title {
@@ -17,12 +17,13 @@
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px;
+  justify-content: center;
 }
 
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  width: 264px;
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -78,4 +79,10 @@
 .socials-team-icon:hover,
 .socials-team-icon:focus {
   background-color: #404bbf;
+}
+
+@media (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
 }

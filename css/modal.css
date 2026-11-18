@@ -18,14 +18,16 @@
 
 .modal {
   background-color: #fcfcfc;
-  width: 408px;
-  height: 582px;
+  max-width: 408px;
+  width: 288px;
+  height: 619px;
+  padding: 72px 16px 24px 16px;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  padding: 72px 24px 24px 24px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
@@ -65,8 +67,9 @@
 }
 
 .modal-title {
-  width: 360px;
-  height: 24px;
+  width: 256px;
+  height: 48px;
+
   align-self: stretch;
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -101,7 +104,7 @@
 }
 
 .modal-input {
-  width: 360px;
+  width: 256px;
   height: 40px;
   padding: 8px 38px;
   display: flex;
@@ -167,9 +170,10 @@
 
 .textarea {
   resize: none;
-  width: 360px;
+  width: 256px;
   height: 120px;
   padding: 8px 16px;
+
   display: flex;
   padding: 8px 16px;
   align-items: flex-start;
@@ -193,8 +197,9 @@
 }
 
 .checkbox-all {
-  width: 343px;
-  height: 14px;
+  width: 256px;
+  height: 27px;
+
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -272,4 +277,29 @@
 
 .textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
+}
+
+@media (min-width: 768px) {
+  .modal {
+    background-color: #fcfcfc;
+    max-width: 408px;
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .textarea {
+    width: 360px;
+  }
+
+  .checkbox-all {
+    width: 343px;
+  }
+
+  .modal-input {
+    width: 360px;
+  }
+
+  .modal-title {
+    width: 360px;
+  }
 }

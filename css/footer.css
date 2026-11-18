@@ -37,10 +37,43 @@
 
 .footer-many {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+@media (min-width: 768px) {
+  .footer-many {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .footer-many {
+    flex-wrap: nowrap;
+  }
+
+  .footer-many {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .footer-logo {
   margin-right: 120px;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-logo {
+    margin-right: 0px;
+  }
+}
+
+.footer-logo p {
+  width: 288px;
 }
 
 .footer-socials-list {
@@ -65,11 +98,15 @@
 .social-media-text {
   margin-top: 0;
   margin-bottom: 16px;
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-  line-height: 1.5;
-  color: #ffffff;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  display: block;
+  text-align: center;
 }
 
 .subscribe {
@@ -77,17 +114,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: auto;
   gap: 16px;
-  width: 453px;
+  width: 320px;
   height: 80px;
 }
 
 .subscribe-form {
   display: flex;
-  flex-direction: row;
-  align-items: center; /* Выравнивает инпут и кнопку по центру вертикали */
-  gap: 24px; /* Отступ между ними */
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+  }
 }
 
 .subscribe-title {
@@ -100,6 +142,8 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+  text-align: center;
+  display: block;
 }
 
 .subscribe-input {
@@ -118,6 +162,9 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
 }
 
 .subscribe-input::placeholder {
