@@ -80,7 +80,6 @@
 .portfolio-card {
   width: 288px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 48px;
 }
 
 .portfolio-image {
@@ -94,8 +93,23 @@
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .portfolio-list {
+    row-gap: 72px;
+  }
+}
+
 @media (min-width: 1158px) {
   .portfolio-card {
     width: calc((100% - 48px) / 3);
+  }
+
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
   }
 }

@@ -81,8 +81,21 @@
   background-color: #404bbf;
 }
 
+@media (min-width: 768px) {
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+}
+
 @media (min-width: 1158px) {
   .team-list {
     flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }

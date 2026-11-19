@@ -8,6 +8,7 @@
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -20,13 +21,13 @@
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 72px;
+  column-gap: 24px;
   justify-content: center;
 }
 
 .features-item {
-  width: 264px;
-  margin-bottom: 72px;
+  width: 100%;
 }
 
 .features {
@@ -51,6 +52,16 @@
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .features-title {
+    text-align: left;
+  }
+
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
 @media (min-width: 1158px) {
   .features-card {
     display: flex;
@@ -58,5 +69,21 @@
 
   .features-list {
     flex-wrap: nowrap;
+  }
+
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .features-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .features-item {
+    width: calc((100% - 72px) / 4);
   }
 }
