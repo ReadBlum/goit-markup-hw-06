@@ -16,6 +16,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-weight: 500;
 }
 
 .features-list {
@@ -85,5 +86,9 @@
 
   .features-item {
     width: calc((100% - 72px) / 4);
+  }
+
+  .features-text {
+    font-weight: 400;
   }
 }

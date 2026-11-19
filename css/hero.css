@@ -72,4 +72,8 @@
     padding-top: 188px;
     padding-bottom: 188px;
   }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }

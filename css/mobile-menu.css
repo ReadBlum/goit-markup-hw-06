@@ -19,7 +19,8 @@
 .modal-menu {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
 .header-nav-menu {
@@ -53,7 +54,7 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .socials-team-icon-menu {
@@ -77,11 +78,17 @@
   background-color: #404bbf;
 }
 
+.header-address-list-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .header-address-link-menu {
-  display: block;
-  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
   font-style: normal;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -90,5 +97,20 @@
 
 .header-address-menu {
   margin-top: auto;
-  margin-bottom: 40px;
+}
+
+.header-address-link-menu.current-page-menu {
+  color: #4d5ae5;
+}
+
+.modal-menu .close-button {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+}
+
+@media (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
 }

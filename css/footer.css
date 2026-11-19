@@ -47,6 +47,8 @@
     flex-direction: row;
     column-gap: 24px;
     row-gap: 72px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 
@@ -75,7 +77,7 @@
 }
 
 .footer-logo p {
-  width: 288px;
+  width: 264px;
   text-align: left;
 }
 
@@ -253,5 +255,10 @@
 
   .subscribe {
     margin-left: auto;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
