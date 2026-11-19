@@ -210,6 +210,7 @@
 @media (min-width: 1158px) {
   .header-address-list {
     flex-direction: row;
+    gap: 40px;
   }
 
   .header-address-link {

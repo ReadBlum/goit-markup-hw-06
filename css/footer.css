@@ -82,6 +82,8 @@
 }
 
 .footer-socials-list {
+  display: flex;
+  justify-content: center;
   gap: 16px;
   margin-top: 0;
 }
@@ -117,8 +119,7 @@
 .subscribe {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
   width: 100%;
 }
@@ -231,6 +232,12 @@
 
   .subscribe {
     width: auto;
+    align-items: flex-start;
+  }
+
+  .footer-socials {
+    align-self: flex-start;
+    align-self: center;
   }
 
   .subscribe-form {
